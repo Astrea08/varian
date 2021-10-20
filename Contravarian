@@ -1,0 +1,13 @@
+class Contravarian<in T> {
+
+    fun sayHello(name : T){
+        return println("Hai $name")
+    }
+}
+
+fun main() {
+    val data1 : Contravarian<Any> = Contravarian()
+    val data2 : Contravarian<String> = data1
+
+    data1.sayHello(3..3)
+}
